@@ -1,0 +1,145 @@
+{
+  "version": "4.3",
+  "author": "Pete Stoppani Consulting LLC",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "IMAGE_MENU_ICON",
+          "file": "menu_icon.png"
+        },
+        {
+          "type": "font",
+          "name": "FONT_METEO_28",
+          "file": "meteocons-webfont.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "type": "font",
+          "name": "FONT_FOUNDATION_20",
+          "file": "fontcustom-Medium.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_Battery_0",
+          "file": "Mobile-Battery-Empty-icon.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_Battery_25",
+          "file": "Mobile-Battery-25-Percent-icon.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_Battery_50",
+          "file": "Mobile-Battery-50-Percent-icon.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_Battery_75",
+          "file": "Mobile-Battery-75-Percent-icon.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_Battery_100",
+          "file": "Mobile-Battery-Full-icon.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_BT",
+          "file": "bt.png"
+        },
+        {
+          "type": "png",
+          "name": "IMAGE_NO_BT",
+          "file": "no_bt.png"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "00d3376b-b1fa-4a39-af34-f17109bda4e0",
+    "messageKeys": {
+      "KEY_REQUEST": 29,
+      "KEY_TEMPERATURE": 0,
+      "KEY_WEATHER_LOCATION": 49,
+      "KEY_FORECAST_DAY1_TEMP_MAX": 18,
+      "KEY_FORECAST_DAY0_TEMP_MAX": 15,
+      "KEY_DND": 34,
+      "KEY_FORECAST_DAY0_TEMP_MIN": 14,
+      "KEY_FORECAST_DAY3_TEMP_MAX": 24,
+      "KEY_WEATHERTEMP": 11,
+      "KEY_DEBUG": 45,
+      "KEY_FORECAST_DAY1_ICON": 19,
+      "KEY_FORECAST_DAY2_TEMP_MAX": 21,
+      "KEY_PREMIUM_KEY_VALID": 32,
+      "KEY_FACE_BG": 42,
+      "KEY_HOUR_ALERT": 33,
+      "KEY_DND_START": 35,
+      "KEY_DIGITIME": 6,
+      "KEY_ERROR": 43,
+      "KEY_BATTERY": 9,
+      "KEY_INVERT": 41,
+      "KEY_FORECAST_DAY3_ICON": 25,
+      "KEY_FORECAST_DAY3_TEMP_MIN": 23,
+      "KEY_PREMIUM_KEY": 28,
+      "KEY_CITY": 26,
+      "KEY_TEMP_FORMAT": 2,
+      "KEY_FACE_ID": 4,
+      "KEY_HANDS": 5,
+      "KEY_FORECAST_DAY2_ICON": 22,
+      "KEY_SYNC": 40,
+      "KEY_WEATHER_FETCH": 48,
+      "KEY_WEATHER_SOURCE": 27,
+      "KEY_HAND_COLOR": 39,
+      "KEY_DND_END": 36,
+      "KEY_DATE": 13,
+      "KEY_WEEKDAY": 7,
+      "KEY_TIMEZONE": 44,
+      "KEY_LARGE_FONTS": 47,
+      "KEY_WEATHERCOND": 12,
+      "KEY_SECONDS": 10,
+      "KEY_COND_ICON": 3,
+      "KEY_FORECAST_DAY2_TEMP_MIN": 20,
+      "KEY_BT_ALERT": 30,
+      "KEY_LANG": 37,
+      "KEY_BATTERY_ALERT": 31,
+      "KEY_FACE_COLOR": 38,
+      "KEY_FORECAST_DAY0_ICON": 16,
+      "KEY_CONDITIONS": 1,
+      "KEY_BT": 8,
+      "KEY_SHAKE": 46,
+      "KEY_FORECAST_DAY1_TEMP_MIN": 17,
+      "KEY_FILLHANDS": 50,
+        
+      "dummy": 100
+    },
+    "enableMultiJS": false,
+    "displayName": "Hodinky Analog",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": true
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "capabilities": [
+      "location",
+      "configurable",
+      "health"
+    ]
+  },
+  "name": "Hodinky Analog"
+}
