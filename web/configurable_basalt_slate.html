@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>Settings</title>
+<link rel="stylesheet" type="text/css" href="../css/slate.min.css">
+<script src="../js/slate.min.js"></script>
+<style type="text/css">
+.title {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #888888;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1 class="title">Hodinky Settings</h1>
+<div class="item-container">
+  <div class="item-container-header">Options</div>
+  <div class="item-container-content">
+    <label class="item"> Temperature Units
+      <select id="tempformat" dir="rtl" class="item-select">
+        <option class="item-select-option"  selected value="C">C</option>
+        <option class="item-select-option" value="F">F</option>
+      </select>
+    </label>
+    <label class="item"> Forecast shakes
+      <select id="shake" dir="rtl" class="item-select">
+        <option class="item-select-option" value="0">No Action</option>
+        <option class="item-select-option" value="1">1</option>
+        <option class="item-select-option" value="2" selected>2</option>
+      </select>
+    </label>
+  </div>
+</div>
+<br>
+<div class="item-container">
+  <div class="item-container-header">Display</div>
+  <div class="item-container-content">
+    <label class="item"> Temperature
+      <input id="weathertemp" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item"> Weather
+      <input id="weathercond" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item">Seconds Hand
+      <input id="seconds" type="checkbox" class="item-checkbox">
+    </label>
+    <label class="item">Digital
+      <input id="digitime" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item">Weekday
+      <input id="weekday" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item">Date
+      <input id="date" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item">Battery
+      <input id="battery" type="checkbox" class="item-checkbox" checked>
+    </label>
+    <label class="item">Bluetooth
+      <input id="bt" type="checkbox" class="item-checkbox">
+    </label>
+    <label class="item">Large Text
+      <input id="largeFonts" type="checkbox" class="item-checkbox">
+    </label>
+    <label class="item">Diagnostics
+      <input id="debug" type="checkbox" class="item-checkbox">
+    </label>
+  </div>
+</div>
+<br>
+<table cellpadding="3" cellspacing="0" border="1" width="100%">
+  <tr>
+    <th colspan="3">Face</th>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img  src="images/face0.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="0" id="0">
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/face0a.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="1" id="1" checked>
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/face1.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="2" id="2">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/face2.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="3" id="3">
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/face3.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="4" id="4" >
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/face5.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="5" id="5">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img  src="images/face4.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="6" id="6">
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/face6a.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="7" id="7" >
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/face7a.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupFaces" value="8" id="8">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" border="1" width="100%">
+  <tr>
+    <th colspan="3">Hands</th>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img  src="images/hands0.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="100" id="100" checked>
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/hands1.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="101" id="101" >
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/hands2.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="102" id="102">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img  src="images/hands3.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="103" id="103">
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/hands4.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="104" id="104" >
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/hands5.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="105" id="105">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+  <tr>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img  src="images/hands6.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="106" id="106">
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"> <img src="images/hands7.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="107" id="107" >
+          </label>
+        </div>
+      </div></td>
+    <td><div class="item-container">
+        <div class="item-container-content">
+          <label class="item"><img src="images/hands8.png" width="74" height="86" alt="">
+            <input type="radio" class="item-radio" name="RadioGroupHands" value="108" id="108">
+          </label>
+        </div>
+      </div></td>
+  </tr>
+</table>
+<div style="background-color: #F4FFF6; color: 50;">
+  <h1 class="title">Premium Features</h1>
+  <table border="0" id="premiumtable" align="center">
+    <tr>
+      <td><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="ZZ7D7WPCYFE5S">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form></td>
+      <td style="font-size: 24px; font-weight: bold; color: #039;">$2 USD</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center; text-decoration: none; font-size: 16pt;"><p><br>
+          Purchase Key<br>
+          <span style="font-size:12px;">(Sent via email within 12 hours)</span> </p></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input style="width:100%" type="text" name="purchasekey" id="purchasekey" value="">
+        <div class="item-container">
+          <div class="button-container">
+            <input type="button" class="item-button" value="Validate" id="validate_button">
+          </div>
+        </div></td>
+    </tr>
+  </table>
+  <br>
+  <div class="item-container">
+    <div class="item-container-header">Options</div>
+    <div class="item-container-content">
+      <label class="item"> Weather Source
+        <select id="wunderground" dir="rtl" class="item-select">
+          <option class="item-select-option" value="0" selected>Open Weather</option>
+          <option class="item-select-option" value="1">Weather Underground</option>
+        </select>
+      </label>
+      <label class="item"> Language
+        <select id="language" dir="rtl" class="item-select">
+          <option class="item-select-option" value="AF"> Afrikaans</option>
+          <option class="item-select-option" value="LI"> British English</option>
+          <option class="item-select-option" value="CZ"> Czech</option>
+          <option class="item-select-option" value="DK"> Danish</option>
+          <option class="item-select-option" value="NL"> Dutch</option>
+          <option class="item-select-option" value="EN" selected> English</option>
+          <option class="item-select-option" value="EO"> Esperanto</option>
+          <option class="item-select-option" value="ET"> Estonian</option>
+          <option class="item-select-option" value="FI"> Finnish</option>
+          <option class="item-select-option" value="FR"> French</option>
+          <option class="item-select-option" value="FC"> French Canadian</option>
+          <option class="item-select-option" value="DL"> German</option>
+          <option class="item-select-option" value="GR"> Greek</option>
+          <option class="item-select-option" value="HU"> Hungarian</option>
+          <option class="item-select-option" value="IT"> Italian</option>
+          <option class="item-select-option" value="NO"> Norwegian</option>
+          <option class="item-select-option" value="PL"> Polish</option>
+          <option class="item-select-option" value="BR"> Portuguese</option>
+          <option class="item-select-option" value="RO"> Romanian</option>
+          <option class="item-select-option" value="RU"> Russian</option>
+          <option class="item-select-option" value="SK"> Slovak</option>
+          <option class="item-select-option" value="SP"> Spanish</option>
+          <option class="item-select-option" value="SW"> Swedish</option>
+        </select>
+      </label>
+      <label class="item"> Digital Time Zone
+        <select id="timezone" dir="rtl" class="item-select">
+          <option class="item-select-option" value="10" selected> Local </option>
+          <option class="item-select-option" value="-7200"> Dateline </option>
+          <option class="item-select-option" value="-6600"> Midway Island </option>
+          <option class="item-select-option" value="-6001"> Hawaii-Aleutian </option>
+          <option class="item-select-option" value="-6002"> Hawaiian </option>
+          <option class="item-select-option" value="-5700"> Marquesas Islands </option>
+          <option class="item-select-option" value="-5400"> Alaskan </option>
+          <option class="item-select-option" value="-4800"> Pacific: Los Angeles, </option>
+          <option class="item-select-option" value="-4200"> Mexico: La Paz, Mazatlan </option>
+          <option class="item-select-option" value="-4201"> Mountain: Arizona </option>
+          <option class="item-select-option" value="-3600"> Canada Central </option>
+          <option class="item-select-option" value="-3601"> Central America </option>
+          <option class="item-select-option" value="-3602"> Central </option>
+          <option class="item-select-option" value="-3603"> Guatemala </option>
+          <option class="item-select-option" value="-3604"> Honduras </option>
+          <option class="item-select-option" value="-3605"> Mexico: Mexico City </option>
+          <option class="item-select-option" value="-3000"> Cayman Islands </option>
+          <option class="item-select-option" value="-3001"> Cuba </option>
+          <option class="item-select-option" value="-3002"> Eastern: New York </option>
+          <option class="item-select-option" value="-3003"> SA Pacific </option>
+          <option class="item-select-option" value="-3004"> Turks and Caicos </option>
+          <option class="item-select-option" value="-2700"> Venezuela </option>
+          <option class="item-select-option" value="-2400"> Atlantic </option>
+          <option class="item-select-option" value="-2401"> Central Brazil </option>
+          <option class="item-select-option" value="-2402"> Cuiaba </option>
+          <option class="item-select-option" value="-2403"> Paraguay </option>
+          <option class="item-select-option" value="-2404"> SA Western </option>
+          <option class="item-select-option" value="-2100"> Newfoundland </option>
+          <option class="item-select-option" value="-1800"> Argentina </option>
+          <option class="item-select-option" value="-1801"> Bahia Brazil </option>
+          <option class="item-select-option" value="-1802"> Chile </option>
+          <option class="item-select-option" value="-1803"> E. South America </option>
+          <option class="item-select-option" value="-1804"> Falkland Islands </option>
+          <option class="item-select-option" value="-1805"> Greenland </option>
+          <option class="item-select-option" value="-1806"> SA Eastern </option>
+          <option class="item-select-option" value="-1807"> St Pierre and Miquelon </option>
+          <option class="item-select-option" value="-1806"> Uruguay </option>
+          <option class="item-select-option" value="-1200"> Mid-Atlantic </option>
+          <option class="item-select-option" value="-600"> Azores </option>
+          <option class="item-select-option" value="-601"> Cape Verde </option>
+          <option class="item-select-option" value="000"> GMT: Dublin, London </option>
+          <option class="item-select-option" value="001"> Greenwich: Monrovia, Reykjavik </option>
+          <option class="item-select-option" value="002"> Morocco </option>
+          <option class="item-select-option" value="600"> C. Europe: Budapest, Prague </option>
+          <option class="item-select-option" value="601"> Namibia </option>
+          <option class="item-select-option" value="602"> Romance: Brussels, Madrid, Paris </option>
+          <option class="item-select-option" value="603"> W. Central Africa </option>
+          <option class="item-select-option" value="604"> W. Europe: Berlin, Rome, Vienna </option>
+          <option class="item-select-option" value="1200"> E. Europe </option>
+          <option class="item-select-option" value="1201"> Egypt: Cairo </option>
+          <option class="item-select-option" value="1202"> FLE: Helsinki, Riga, Sofia </option>
+          <option class="item-select-option" value="1203"> Israel: Jerusalem </option>
+          <option class="item-select-option" value="1204"> Jordan: Amman </option>
+          <option class="item-select-option" value="1205"> Lebanon </option>
+          <option class="item-select-option" value="1206"> Libya: Tripoli </option>
+          <option class="item-select-option" value="1208"> S. Africa: Harare, Pretoria </option>
+          <option class="item-select-option" value="1209"> Turkey: Istanbul </option>
+          <option class="item-select-option" value="1210"> Ukraine </option>
+          <option class="item-select-option" value="1800"> Arab: Kuwait, Riyadh </option>
+          <option class="item-select-option" value="1801"> Arabic: Baghdad </option>
+          <option class="item-select-option" value="1802"> Belarus </option>
+          <option class="item-select-option" value="1803"> E. Africa- Nairobi </option>
+          <option class="item-select-option" value="1804"> Kaliningrad: Minsk </option>
+          <option class="item-select-option" value="2100"> Iran: Tehran </option>
+          <option class="item-select-option" value="2400"> Arabian: Abu Dhabi, Muscat </option>
+          <option class="item-select-option" value="2401"> Armenia </option>
+          <option class="item-select-option" value="2402"> Azerbaijan: Baku </option>
+          <option class="item-select-option" value="2403"> Crimean </option>
+          <option class="item-select-option" value="2404"> Mauritius: Port Louis </option>
+          <option class="item-select-option" value="2405"> Russian: Moscow, St. Petersburg </option>
+          <option class="item-select-option" value="2406"> Samara </option>
+          <option class="item-select-option" value="2407"> Georgian: Tbilisi </option>
+          <option class="item-select-option" value="2700"> Afghanistan: Kabul </option>
+          <option class="item-select-option" value="3000"> Pakistan: Islamabad, Karachi </option>
+          <option class="item-select-option" value="3001"> W. Asia: Ashgabat, Tashkent </option>
+          <option class="item-select-option" value="3300"> India: Mumbai, New Delhi </option>
+          <option class="item-select-option" value="3405"> Nepal: Kathmandu </option>
+          <option class="item-select-option" value="3600"> Bangladesh: Dhaka </option>
+          <option class="item-select-option" value="3601"> Central Asia: Astana </option>
+          <option class="item-select-option" value="3602"> Ekaterinburg </option>
+          <option class="item-select-option" value="3603"> Sri Lanka </option>
+          <option class="item-select-option" value="3900"> Myanmar: Yangon (Rangoon) </option>
+          <option class="item-select-option" value="4200"> Kemerovo </option>
+          <option class="item-select-option" value="4201"> N. Central: Asia Novosibirsk </option>
+          <option class="item-select-option" value="4202"> SE Asia: Bangkok, Hanoi, Jakarta </option>
+          <option class="item-select-option" value="4800"> China: Beijing, Chongqing, HK </option>
+          <option class="item-select-option" value="4801"> North Asia: Krasnoyarsk: </option>
+          <option class="item-select-option" value="4802"> Singapore: Kuala Lumpur </option>
+          <option class="item-select-option" value="4803"> Taipei </option>
+          <option class="item-select-option" value="4804"> Ulaanbaatar </option>
+          <option class="item-select-option" value="4805"> W. Australia: Perth </option>
+          <option class="item-select-option" value="5400"> East Timor </option>
+          <option class="item-select-option" value="5400"> North Asia East: Ikrutsk </option>
+          <option class="item-select-option" value="5400"> Korea: Seoul </option>
+          <option class="item-select-option" value="5401"> Tokyo: Osaka, Sapporo </option>
+          <option class="item-select-option" value="5402"> Ulan-Ude </option>
+          <option class="item-select-option" value="5700"> AUS Central: Darwin </option>
+          <option class="item-select-option" value="5702"> Cen. Australia: Adelaide </option>
+          <option class="item-select-option" value="6000"> AUS Eastern: Melbourne, Sydney </option>
+          <option class="item-select-option" value="6001"> Bougainville </option>
+          <option class="item-select-option" value="6002"> E. Australia: Brisbane </option>
+          <option class="item-select-option" value="6003"> Tasmania: Hobart </option>
+          <option class="item-select-option" value="6004"> West Pacific: Guam, Port Moresby </option>
+          <option class="item-select-option" value="6005"> Yakutsk </option>
+          <option class="item-select-option" value="6600"> Central Pacific </option>
+          <option class="item-select-option" value="6601"> Khabarovsk </option>
+          <option class="item-select-option" value="6602"> Vladivostok </option>
+          <option class="item-select-option" value="6900"> Norfolk Island </option>
+          <option class="item-select-option" value="7200"> Fiji </option>
+          <option class="item-select-option" value="7201"> Magadan </option>
+          <option class="item-select-option" value="7202"> Marshall Islands </option>
+          <option class="item-select-option" value="7203"> New Zealand </option>
+          <option class="item-select-option" value="7204"> Kamchatka: Petropavlovsk </option>
+          <option class="item-select-option" value="7800"> Samoa </option>
+          <option class="item-select-option" value="7801"> Tonga: Nuku"alofa </option>
+        </select>
+      </label>
+      <label class="item"> Bluetooth Alert
+        <input id="btalert" type="checkbox" class="item-checkbox">
+      </label>
+      <label class="item"> Hour Alert
+        <input id="houralert" type="checkbox" class="item-checkbox">
+      </label>
+      <label class="item"> Battery Alert
+        <input id="batteryalert" type="checkbox" class="item-checkbox">
+      </label>
+      <label class="item"> Invert Colors
+        <input id="invert" type="checkbox" class="item-checkbox">
+      </label>
+    </div>
+  </div>
+  <div class="item-container">
+    <div class="item-container-header">Colors</div>
+    <div class="item-container-content">
+      <label class="item"> Face Color
+        <input type="text" class="item-color item-color-normal" id="faceColor" value="#000055">
+      </label>
+      <label class="item"> Face Pattern Color
+        <input type="text" class="item-color item-color-normal" id="faceBgColor" value="#0x0055AA">
+      </label>
+      <label class="item"> Hands Color
+        <input type="text" class="item-color item-color-sunny" id="handColor" value="#ffffff">
+      </label>
+    </div>
+  </div>
+  <table cellpadding="0" cellspacing="0" border="1" align="center" width="100%" style="background-color:#ddd; color:#000; font-size: 12pt;" >
+    <tr>
+      <th colspan="3">Background Pattern</th>
+    </tr>
+    <tr>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img  src="images/basalt/bg0.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="400" id="400" checked>
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"> <img src="images/basalt/bg1.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="401" id="401" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img src="images/basalt/bg2.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="402" id="402">
+            </label>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img  src="images/basalt/bg3.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="403" id="403">
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"> <img src="images/basalt/bg4.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="404" id="404" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img src="images/basalt/bg5.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="405" id="405">
+            </label>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img  src="images/basalt/bg6.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="406" id="406" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"> <img src="images/basalt/bg7.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="407" id="407" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img src="images/basalt/bg8.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="408" id="408">
+            </label>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img  src="images/basalt/bg9.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="409" id="409">
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"> <img src="images/basalt/bg10.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="410" id="410" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img src="images/basalt/bg11.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="411" id="411">
+            </label>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img  src="images/basalt/bg12.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="412" id="412">
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"> <img src="images/basalt/bg13.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="413" id="413" >
+            </label>
+          </div>
+        </div></td>
+      <td><div class="item-container">
+          <div class="item-container-content">
+            <label class="item"><img src="images/basalt/bg14.png" width="74" height="86" alt="">
+              <input type="radio" class="item-radio" name="RadioGroupFaceBackgrounds" value="414" id="414">
+            </label>
+          </div>
+        </div></td>
+    </tr>
+  </table>
+  <div class="item-container">
+    <div class="item-container-header">Do Not Disturb</div>
+    <div class="item-container-content">
+      <label class="item"> Enable
+        <input id="dnd" type="checkbox" class="item-checkbox">
+      </label>
+      <label class="item"> Start
+        <select id="dndStart" dir="rtl" class="item-select">
+          <option class="item-select-option" value="1"> 1 /  1 AM</option>
+          <option class="item-select-option" value="2"> 2 /  2 AM</option>
+          <option class="item-select-option" value="3"> 3 /  3 AM</option>
+          <option class="item-select-option" value="4"> 4 /  4 AM</option>
+          <option class="item-select-option" value="5"> 5 /  5 AM</option>
+          <option class="item-select-option" value="6"> 6 /  6 AM</option>
+          <option class="item-select-option" value="7"> 7 /  7 AM</option>
+          <option class="item-select-option" value="8"> 8 /  8 AM</option>
+          <option class="item-select-option" value="9"> 9 /  9 AM</option>
+          <option class="item-select-option" value="10">10 / 10 AM</option>
+          <option class="item-select-option" value="11">11 / 11 AM</option>
+          <option class="item-select-option" value="12">12 / noon</option>
+          <option class="item-select-option" value="13">13 /  1 PM</option>
+          <option class="item-select-option" value="14">14 /  2 PM</option>
+          <option class="item-select-option" value="15">15 /  3 PM</option>
+          <option class="item-select-option" value="16">16 /  4 PM</option>
+          <option class="item-select-option" value="17">17 /  5 PM</option>
+          <option class="item-select-option" value="18">18 /  6 PM</option>
+          <option class="item-select-option" value="19">19 /  7 PM</option>
+          <option class="item-select-option" value="20">20 /  8 PM</option>
+          <option class="item-select-option" value="21">21 /  9 PM</option>
+          <option class="item-select-option" value="22">22 / 10 PM</option>
+          <option class="item-select-option" value="23">23 / 11 PM</option>
+          <option class="item-select-option" value="24">24 / Midnight</option>
+        </select>
+      </label>
+      <label class="item"> End
+        <select id="dndEnd" dir="rtl" class="item-select">
+          <option class="item-select-option" value="1"> 1 /  1 AM</option>
+          <option class="item-select-option" value="2"> 2 /  2 AM</option>
+          <option class="item-select-option" value="3"> 3 /  3 AM</option>
+          <option class="item-select-option" value="4"> 4 /  4 AM</option>
+          <option class="item-select-option" value="5"> 5 /  5 AM</option>
+          <option class="item-select-option" value="6"> 6 /  6 AM</option>
+          <option class="item-select-option" value="7"> 7 /  7 AM</option>
+          <option class="item-select-option" value="8"> 8 /  8 AM</option>
+          <option class="item-select-option" value="9"> 9 /  9 AM</option>
+          <option class="item-select-option" value="10">10 / 10 AM</option>
+          <option class="item-select-option" value="11">11 / 11 AM</option>
+          <option class="item-select-option" value="12">12 / noon</option>
+          <option class="item-select-option" value="13">13 /  1 PM</option>
+          <option class="item-select-option" value="14">14 /  2 PM</option>
+          <option class="item-select-option" value="15">15 /  3 PM</option>
+          <option class="item-select-option" value="16">16 /  4 PM</option>
+          <option class="item-select-option" value="17">17 /  5 PM</option>
+          <option class="item-select-option" value="18">18 /  6 PM</option>
+          <option class="item-select-option" value="19">19 /  7 PM</option>
+          <option class="item-select-option" value="20">20 /  8 PM</option>
+          <option class="item-select-option" value="21">21 /  9 PM</option>
+          <option class="item-select-option" value="22">22 / 10 PM</option>
+          <option class="item-select-option" value="23">23 / 11 PM</option>
+          <option class="item-select-option" value="24">24 / Midnight</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</div>
+<div class="item-container">
+  <div class="button-container">
+    <input id="submit_button" type="button" class="item-button" value="SUBMIT">
+  </div>
+</div>
+</body>
+<script>
+ 	var purchasekeyvalid = false;
+	var premiumtable = document.getElementById("premiumtable");
+	var purchasekey = document.getElementById("purchasekey");
+  var wunderground = document.getElementById("wunderground");
+  var dnd = document.getElementById("dnd");
+  var dndStart = document.getElementById("dndStart");
+  var dndEnd = document.getElementById("dndEnd");
+  var timezone = document.getElementById("timezone");
+  var language = document.getElementById("language");
+  var houralert = document.getElementById("houralert");
+  var btalert = document.getElementById("btalert");
+  var batteryalert = document.getElementById("batteryalert");
+  var invert = document.getElementById("invert");
+  var tempformat = document.getElementById("tempformat");
+  var digitime = document.getElementById("digitime");
+  var weekday = document.getElementById("weekday");
+  var seconds = document.getElementById("seconds");
+  var bt = document.getElementById("bt");
+  var shake = document.getElementById("shake");
+  var debug = document.getElementById("debug");
+  var largeFonts = document.getElementById("largeFonts");
+  var battery = document.getElementById("battery");
+  var seconds = document.getElementById("seconds");
+  var weathertemp = document.getElementById("weathertemp");
+  var weathercond = document.getElementById("weathercond");
+  var date = document.getElementById("date");
+  var facecolor = document.getElementById("faceColor");
+  var facebgcolor = document.getElementById("faceBgColor");
+  var handcolor = document.getElementById("handColor");
+	
+	function getRadioValue(groupName) {
+    var _result;
+    try {
+      var o_radio_group = document.getElementsByName(groupName);
+      for (var a = 0; a < o_radio_group.length; a++) {
+        if (o_radio_group[a].checked) {
+          _result = o_radio_group[a].value;
+          break;
+        }
+      }
+    } catch (e) { }
+    
+    return _result;
+  }
+	
+  function getConfigData() {
+	  // radio
+    var face = getRadioValue("RadioGroupFaces");
+    var hands = getRadioValue("RadioGroupHands");
+    var facebg = getRadioValue("RadioGroupFaceBackgrounds");
+    
+    var options = {
+      "purchasekey": purchasekey.value,
+      "purchasekeyvalid": purchasekeyvalid,
+      "wunderground": wunderground.value,
+      "dnd": dnd.checked,
+      "dndStart": dndStart.value,
+      "dndEnd": dndEnd.value,
+      "timezone": timezone.value,
+      "language": language.value,
+      "houralert": houralert.checked,
+      "btalert": btalert.checked,
+      "batteryalert": batteryalert.checked,
+      "invert": invert.checked,
+      "tempformat": tempformat.value,
+      "digitime": digitime.checked,
+      "weekday": weekday.checked,
+      "seconds": seconds.checked,
+      "bt": bt.checked,
+      "shake": shake.value,
+      "debug": debug.checked,
+      "largeFonts": largeFonts.checked,
+      "battery": battery.checked,
+      "weathertemp": weathertemp.checked,
+      "weathercond": weathercond.checked,
+      "date": date.checked,
+      "face": face,
+      "hands": hands,
+      "facebg": facebg,
+      "faceColor": faceColor.value,
+      "faceBgColor": faceBgColor.value,
+      "handColor": handColor.value,
+    };
+
+    // Save for next launch
+    localStorage["options"] = JSON.stringify(options);
+    console.log("Got options: " + JSON.stringify(options));
+    return options;
+  }
+
+	function updateForPurchaseKeyValid() {
+		premiumtable.hidden = purchasekeyvalid;
+    houralert.disabled = !purchasekeyvalid;
+    btalert.disabled = !purchasekeyvalid;
+    batteryalert.disabled = !purchasekeyvalid;
+    invert.disabled = !purchasekeyvalid;
+    wunderground.disabled = !purchasekeyvalid;
+    dnd.disabled = !purchasekeyvalid;
+    dndStart.disabled = !purchasekeyvalid;
+    dndEnd.disabled = !purchasekeyvalid;
+    language.disabled = !purchasekeyvalid;
+    timezone.disabled = !purchasekeyvalid;
+    facecolor.disabled = !purchasekeyvalid;
+    facebgcolor.disabled = !purchasekeyvalid;
+    handcolor.disabled = !purchasekeyvalid;
+    
+    for (i = 0; i < 15; i++) {
+      document.getElementById(400 + i).disabled = !purchasekeyvalid;
+    }
+	}
+	
+  function getQueryParam(variable, defaultValue) {
+    var query = location.search.substring(1);
+    var vars = query.split("&");
+  
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+      if (pair[0] === variable) {
+        return decodeURIComponent(pair[1]);
+      }
+    }
+    return defaultValue;
+  }
+ 
+  var submitButton = document.getElementById("submit_button");
+  submitButton.addEventListener("click", function() {
+    // Set the return URL depending on the runtime environment
+    var return_to = getQueryParam("return_to", "pebblejs://close#");
+    document.location = return_to + encodeURIComponent(JSON.stringify(getConfigData()));
+  });
+  
+  var validateButton = document.getElementById("validate_button");
+  validateButton.addEventListener("click", function() {
+    var key = purchasekey.value;
+    var keys = [  "001-2714-8543", "001-2724-8543", "001-2314-8543", "00127148543", "00127248543", "00123148543"];  
+    var found = 0;
+    
+    for (i = 0; found == 0 && i < keys.length; i++) {
+      var index = key.indexOf(keys[i]);
+      if (index >= 0) {
+        found = 1;
+        purchasekey.value = keys[i];
+        purchasekeyvalid = true;
+        updateForPurchaseKeyValid();
+      }
+    }
+  });
+
+  (function() {
+    // Load any previously saved configuration, if available
+    if(localStorage["options"]) {
+      var options = JSON.parse(localStorage["options"]);
+      purchasekey.value = options.purchasekey;
+      purchasekeyvalid = options.purchasekeyvalid;
+      wunderground.value = options.wunderground;
+      dnd.checked = options.dnd;
+      dndStart.value = options.dndStart;
+      dndEnd.value = options.dndEnd;
+      timezone.value = options.timezone;
+      language.value = options.language;
+      houralert.checked = options.houralert;
+      btalert.checked = options.btalert;
+      batteryalert.checked = options.batteryalert;
+      invert.checked = options.invert;
+      tempformat.value = options.tempformat;
+      digitime.checked = options.digitime;
+      seconds.checked = options.seconds;
+      weekday.checked = options.weekday;
+      bt.checked = options.bt;
+      shake.value = options.shake;
+      debug.checked = options.debug;
+      largeFonts.checked = options.largeFonts;
+      battery.checked = options.battery;
+      weathertemp.checked = options.weathertemp;
+      weathercond.checked = options.weathercond;
+      date.checked = options.date;
+      faceColor.value = options.faceColor;
+      faceBgColor.value = options.faceBgColor;
+      handColor.value = options.handColor;
+      // radio
+      var face = document.getElementById(options.face);
+      face.checked = true;
+      var hands = document.getElementById(options.hands);
+      hands.checked = true;
+      var facebg = document.getElementById(options.facebg);
+      facebg.checked = true;
+    } else {
+      // Older version used query params
+      purchasekey.value = getQueryParam("purchasekey", "");
+      purchasekeyvalid = getQueryParam("purchasekeyvalid", "0") == "1";
+      wunderground.value = getQueryParam("wunderground", "0");
+      dnd.checked = getQueryParam("dnd", "0") == "1";
+      dndStart.value = getQueryParam("dndStart", "1");
+      dndEnd.value = getQueryParam("dndEnd", "1");
+      timezone.value = getQueryParam("timezone", "10");
+      language.value = getQueryParam("language", "EN");
+      houralert.checked = getQueryParam("houralert", "0") == "1";
+      btalert.checked = getQueryParam("btalert", "0") == "1";
+      batteryalert.checked = getQueryParam("batteryalert", "0") == "1";
+      invert.checked = getQueryParam("invert", "0") == "1";
+      tempformat.value = getQueryParam("tempformat", "C");
+      digitime.checked = getQueryParam("digitime", "1") == "1";
+      seconds.checked = getQueryParam("seconds", "0") == "1";
+      weekday.checked = getQueryParam("weekday", "1") == "1";
+      bt.checked = getQueryParam("bt", "0") == "1";
+      shake.value = getQueryParam("shake", "2");
+      debug.checked = getQueryParam("debug", "0") == "1";
+      largeFonts.checked = getQueryParam("largeFonts", "0") == "1";
+      battery.checked = getQueryParam("battery", "0") == "1";
+      weathertemp.checked = getQueryParam("weathertemp", "1") == "1";
+      weathercond.checked = getQueryParam("weathercond", "1") == "1";
+      date.checked = getQueryParam("date", "1") == "1";
+      // radio
+      var faceColorId = document.getElementById(getQueryParam("faceColor", "200"));
+      switch (faceColorId) {
+        case "200":
+          faceColor.value = "#000055";
+          break;
+        case "201":
+          faceColor.value = "#0055AA";
+          break;
+        case "202":
+          faceColor.value = "#00AAFF";
+          break;
+        case "203":
+          faceColor.value = "#005500";
+          break;
+        case "204":
+          faceColor.value = "#AA5500";
+          break;
+        case "205":
+          faceColor.value = "#550000";
+          break;
+        case "206":
+          faceColor.value = "#550055";
+          break;
+        case "207":
+          faceColor.value = "#AA0000";
+          break;
+        case "208":
+          faceColor.value = "#000000";
+          break;          
+        default:
+          faceColor.value = "#000055";
+          break; 
+      }
+      var handColorId = document.getElementById(getQueryParam("handColor", "300"));
+      switch (handColorId) {
+        case "300":
+          handColor.value = "#FFFFFF";
+          break;
+        case "301":
+          handColor.value = "#AAAAAA";
+          break;
+        case "302":
+          handColor.value = "#FFFF55";
+          break;
+        case "303":
+          handColor.value = "#FFAAFF";
+          break;
+        case "304":
+          handColor.value = "#55AAAA";
+          break;
+        case "305":
+          handColor.value = "#ffaa55";
+          break;
+        case "306":
+          handColor.value = "#AAFFAA";
+          break;
+        case "307":
+          handColor.value = "#AAFFFF";
+          break;
+        case "308":
+          handColor.value = "#FFAA00";
+          break;          
+        default:
+          handColor.value = "#ffffff";
+          break; 
+      }
+      var face = document.getElementById(getQueryParam("face", "1"));
+      face.checked = true;
+      var hands = document.getElementById(getQueryParam("hands", "100"));
+      hands.checked = true;
+      var facebg = document.getElementById(getQueryParam("facebg", "400"));
+      facebg.checked = true;
+    }
+  
+   updateForPurchaseKeyValid();
+  })();
+
+  </script>
+</html>
