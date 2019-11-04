@@ -337,17 +337,17 @@ Pebble.addEventListener('appmessage',
 
 Pebble.addEventListener("showConfiguration", function(e) {
     console.log("showConfiguration");
-    var uri = 'http://" + DOMAIN + "/configurable_aplite7.html';
+    var uri = "http://" + DOMAIN + "/configurable_aplite7.html";
     if(Pebble.getActiveWatchInfo) {
         var watch = Pebble.getActiveWatchInfo();
         if (watch) {
             console.log("platform: " + watch.platform);
             if (watch.platform == "basalt") {
-                uri = 'http://" + DOMAIN + "/configurable_basalt7.html';
+                uri = "http://" + DOMAIN + "/configurable_basalt7.html";
             } else if (watch.platform == "chalk") {
-                uri = 'http://" + DOMAIN + "/configurable_chalk7.html';
+                uri = "http://" + DOMAIN + "/configurable_chalk7.html";
             } else if (watch.platform == "diorite") {
-                uri = 'http://" + DOMAIN + "/configurable_diorite7.html';
+                uri = "http://" + DOMAIN + "/configurable_diorite7.html";
             }
         }
     }
